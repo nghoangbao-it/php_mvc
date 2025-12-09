@@ -4,7 +4,6 @@ class CoreModel {
     private $conn;
     public function __construct() {
         $this -> conn = Database::connectPDO();
-        var_dump($this -> conn);
     }
 
     protected function getAll(string $sql) {

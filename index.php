@@ -17,6 +17,9 @@ $paths = [
     '/core/*.php',
     '/app/Models/*.php',
     '/app/Controllers/*.php',
+    '/app/Views/parts/*.php',
+    '/app/Views/layouts/*.php',
+    '/app/Views/layouts-part/*.php',
 ];
 foreach($paths as $path) {
     foreach(glob(__DIR__ . $path) as $filename) {
