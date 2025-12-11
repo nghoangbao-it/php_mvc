@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php $this -> renderView('parts/header.php') ?>
-    <p>Đây là body</p>
+    <?php echo $content ?>
     <?php $this -> renderView('parts/footer.php') ?>
 </body>
 </html>

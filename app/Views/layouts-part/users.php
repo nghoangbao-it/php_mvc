@@ -22,7 +22,7 @@
             </thead>
             <tbody>
                 <?php
-                foreach ($data as $key => $value) {
+                foreach ($data as $value) {
                     echo "<tr>";
                     echo "<td>" . $value['id'] . "</td>";
                     echo "<td>" . $value['name'] . "</td>";

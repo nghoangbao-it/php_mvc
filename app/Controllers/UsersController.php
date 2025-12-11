@@ -7,11 +7,8 @@ class UsersController extends BaseController
     {
         $user = new Users();
         $users = $user->getAllUsers();
-        // $list_users = [ 'name' => 'Anh', 'email' => '20'];
-        // $this -> renderView('users.php', $list_users);
-
+       
         ob_start();
-        print_r($users);
         $this->renderView('layouts-part/users.php', $users);
         $data = [
             'content' => ob_get_clean(),
